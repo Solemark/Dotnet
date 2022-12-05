@@ -1,0 +1,45 @@
+﻿@page "/fetchdata"
+@using System.Text.Json
+@inject HttpClient Http
+
+<PageTitle>Retrive API Data</PageTitle>
+
+<h1>Retrieve Data from Web API</h1>
+
+@if(loading){
+    <p>LOADING. . .</p>
+}
+@if(error){
+    <p>ERROR!</p>
+    <p>@errormsg</p>
+}
+@if(!loading && !error){
+    <ul>
+        @foreach(var character in characters){
+            <li>
+                @character.name
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private Characters[]? characters;
+    private bool loading = false;
+    private bool error = false;
+    private string errormsg = "";
+    protected override async Task OnInitializedAsync() {
+        loading = true;
+        error = false;
+        try{
+            var response = await Http.GetStringAsync("https://api.genshin.dev/characters/all");
+            characters = JsonSerializer.Deserialize<Characters[]>(response);
+        } catch (Exception e){
+            errormsg = ""+e;
+            error = true;
+        } finally{
+            loading = false;
+        }
+        await base.OnInitializedAsync();
+    }
+}

@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello World!</h1>
+
+<p>@greeting_string</p>
+<button class="btn btn-primary" @onclick="greet">Hello!</button>
+
+@code {
+    private string greeting_string = "";
+    private void greet() {
+        greeting_string = "Testing, testing, 1, 2, 3! Can you hear me?";
+    }
+}

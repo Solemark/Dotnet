@@ -1,0 +1,42 @@
+﻿@page "/todo"
+
+<PageTitle>Todo</PageTitle>
+
+<h1>Todo</h1>
+
+<ul>
+    @foreach(var todo in todos){
+        if(!todo.Complete){
+        <li>
+            @todo.Name
+            <input type="checkbox" @bind="todo.Complete" />
+        </li>
+        }
+    }
+</ul>
+
+<input @bind="newTodo" />
+<button class="btn btn-primary" @onclick="AddTodo">Add Todo</button>
+<br />
+<button class="btn btn-danger" @onclick="RemoveCompleted">Clear completed from memory</button>
+
+@code {
+    private List<todo> todos = new();
+    private string? newTodo;
+
+    private void AddTodo(){
+        if(!string.IsNullOrWhiteSpace(newTodo)){
+            todos.Add(new todo {Name = newTodo});
+            newTodo = string.Empty;
+        }
+    }
+
+    private void RemoveCompleted(){
+        for(int i=0; i<todos.Count-1; i++){
+            Console.WriteLine(todos[i].Name);
+            if(todos[i].Complete){
+                todos.RemoveAt(i);
+            }
+        }
+    }
+}
