@@ -1,4 +1,4 @@
 # Dotnet
 
-Run with; 
-dotnet watch
+Run with;
+    dotnet watch
