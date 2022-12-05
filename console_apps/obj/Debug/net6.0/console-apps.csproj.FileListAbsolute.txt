@@ -1,0 +1,15 @@
+/mnt/Secondary HDD/Code/dotnet/console-apps/bin/Debug/net6.0/console-apps
+/mnt/Secondary HDD/Code/dotnet/console-apps/bin/Debug/net6.0/console-apps.deps.json
+/mnt/Secondary HDD/Code/dotnet/console-apps/bin/Debug/net6.0/console-apps.runtimeconfig.json
+/mnt/Secondary HDD/Code/dotnet/console-apps/bin/Debug/net6.0/console-apps.dll
+/mnt/Secondary HDD/Code/dotnet/console-apps/bin/Debug/net6.0/ref/console-apps.dll
+/mnt/Secondary HDD/Code/dotnet/console-apps/bin/Debug/net6.0/console-apps.pdb
+/mnt/Secondary HDD/Code/dotnet/console-apps/obj/Debug/net6.0/console-apps.csproj.AssemblyReference.cache
+/mnt/Secondary HDD/Code/dotnet/console-apps/obj/Debug/net6.0/console-apps.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/Secondary HDD/Code/dotnet/console-apps/obj/Debug/net6.0/console-apps.AssemblyInfoInputs.cache
+/mnt/Secondary HDD/Code/dotnet/console-apps/obj/Debug/net6.0/console-apps.AssemblyInfo.cs
+/mnt/Secondary HDD/Code/dotnet/console-apps/obj/Debug/net6.0/console-apps.csproj.CoreCompileInputs.cache
+/mnt/Secondary HDD/Code/dotnet/console-apps/obj/Debug/net6.0/console-apps.dll
+/mnt/Secondary HDD/Code/dotnet/console-apps/obj/Debug/net6.0/ref/console-apps.dll
+/mnt/Secondary HDD/Code/dotnet/console-apps/obj/Debug/net6.0/console-apps.pdb
+/mnt/Secondary HDD/Code/dotnet/console-apps/obj/Debug/net6.0/console-apps.genruntimeconfig.cache
